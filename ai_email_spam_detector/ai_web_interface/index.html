@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spam Detector</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <style>
+    /* CSS to center the button and margin the container */
+    .center-button {
+      text-align: center;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    /* Add padding to the container */
+    .container {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="center-container">
+    <div class="container">
+      <h1 class="text-center">Spam Detector</h1>
+      <form id="spamForm" class="mt-4">
+        <div class="mb-3">
+          <label for="message" class="form-label">Enter your message:</label>
+          <textarea class="form-control" id="message" name="message" rows="10" cols="50" placeholder="Enter your message" required></textarea>
+        </div>
+        <div class="center-button">
+          <button type="submit" class="btn btn-primary">Send Now</button>
+        </div>
+      </form>
+      <div id="resultContainer" class="center-button mt-3"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>    
